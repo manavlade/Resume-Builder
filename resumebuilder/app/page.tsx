@@ -1,10 +1,10 @@
-import SlideBar from "@/components/ui/Navbar";
+import Navbar from "@/components/ui/Navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main  >
-      <SlideBar/>
+      <Navbar/>
       Resume
       CV
      portfolio generator
