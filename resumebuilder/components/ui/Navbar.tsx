@@ -37,7 +37,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden md:flex gap-5">
-                        <a href="#">Home</a>
+                        <a href="#" className="" >Home</a>
                         <a href="#">About us</a>
                         <a href="#">Resume</a>
                         <a href="#">CV</a>
@@ -55,11 +55,14 @@ const Navbar = () => {
                             className=" text-2xl">
                             Create Account
                         </Button>
+                        <ModeToggle />
                     </div>
+                    
                     <Button className="p-2 md:hidden" onClick={handleToggle}>
                         {isToggled ? <X /> : <AlignJustify />}
                     </Button>
-                    {/* <ModeToggle /> */}
+                    
+                    {/* Glitch ye hai ki small screen mei navbar color dikh nahi hai when bg is dark */}
                 </nav>
             </div>
             <div
@@ -74,8 +77,8 @@ const Navbar = () => {
                         <X />
                     </Button>
                 </div>
-                <div className="flex flex-col gap-5 mt-4">
-                    <a href="#">Home</a>
+                <div className="flex flex-col gap-5 mt-4 ">
+                    <a href="#" className="" >Home</a>
                     <a href="#">About us</a>
                     <a href="#">Resume</a>
                     <a href="#">CV</a>
